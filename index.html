@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Created with iSpring --><!-- 964 604 --><!--version 9.7.6.18120 --><!--type html --><!--mainFolder ./ --><!--content book -->
+<!--
+Copyright 2012 Mozilla Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Adobe CMap resources are covered by their own copyright but the same license:
+
+    Copyright 1990-2015 Adobe Systems Incorporated.
+
+See https://github.com/adobe-type-tools/cmap-resources
+-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<title>[Nitro] Biologia - Lei de Mendel - Ebook</title>
+	<link rel="stylesheet" href="data/css/viewer.css"/>
+	<script src="data/js/viewer.js"></script>
+	
+	<script src=lms.js></script>
+	<script>
+		if (document.addEventListener) // IE9+
+		{
+			var book = "eNp1VF1u4zYQvgohYN9swQ5ix/YbZTKJNrLkWnK2wSIQaItRiMqkS1Fe7MYBeoG9wy4KtECBPvUIuklP0qGkOEWLvFDkNzPf/GqeHCNMwZ2Z8zEURqt75AlVqFww1EcBFyjjaMFlxgt4041SPzk9Z89yHosvvHRmH5+cEm5wGU1H7tnFuDc5H7qT6X3P0UzmVjDsTe+f4V2ywoAf6g0w8c6Hw/Fkeu6R0RRf4ovpJRmenZHzycUA+B9ZGagtK265LoWSzszoijfwkpXlJ6UzZ/bAihIwMZyA/MmhJMXxTbrEcfwhWpGU+DiIrlI/vMWBT17xAHs0gCgwKrl8ZCgTuTAsY0jWvyrES8PQVmnNDXNRwqXhSKoD29mbC5G94eaFlVg2jlhHvmeaIbbRQltmjgpx0Gr2Ns0ywHN6HQWEroAsthyt8hyH88bBnMktL5hu4SDCoNp8/PA1ijmDBHImM/X3L7+1mtEN4HD0nKWXYkJSL4puFnh1k15T3LrDmdhCsa0Z2jG9ZZnS0OH/WyT0xwT0f6ga1YPa1n/Y9MSBa1TAqKge2hbi58qWDm2UsYV9IWxL0rzgXn/PhYQKmYoVbufpKjrlwYyuv3cRvHiP0wR7IFv8J0KC7+KTYSZYB19H69Ur/lh2XhZ+uE7oq2An5IskCpPrFo9B8J5J93jJD+4RHLpHvNH2Jtzj+0raowAsV+4x5sY9RhUcoQJlwr90fGGURusk8EMKbCF0tNqh+k8JteatQift0qq//ku0xFf0FOKyK9a7Bg3XC4+u3rV6KzqnYRLc2TZRArqymTYhYZphbluldYhvsQ9sAU09HIYwN10jb5sOlvVfaK/gby9sG+2glvAn7BDEW3J9ELZ56APfuG/T+UlgswysMdpXm0LYFoE5UFR7pSGm+hvSfK9VVtW/27lQDw/9QsguxjsaJ3QFrTxlrSD+nfMMK0crw7fmUqvdXO0/C5mfVsADPLjeayHtesGDwWQ8pl5/TAbT/nhAx/2RRwZ9PCBDj5ARLJ8heBOlNciXBfvsg49cM9Nsmo4T5srAcMWGQf1a8PkfcROoTw==";
+
+			document.addEventListener("DOMContentLoaded", function() {
+				PdfViewer.checkMobileIntegration(book);
+
+				var viewerInitCallback = function(viewer) {
+									(function(viewer){
+					var lms = iSpring.pdfviewer.LMS.instance();
+					lms.start(viewer);
+				
+					window.onunload = window.onbeforeunload = function()
+					{
+						lms.closeLms();
+					};
+				})(viewer)
+
+				};
+
+				var startupApplication = function(initViewerState) {
+					var fileOpenParams = {"type":"fileName","filePath":"data\/book.pdf"};
+					PdfViewer.open(fileOpenParams, document.body, book, viewerInitCallback, initViewerState);
+				};
+
+				(function(startupFunc) {
+					if (startupFunc)
+					{
+						startupFunc(startupApplication);
+					}
+					else
+					{
+						startupApplication();
+					}
+				})(				function(startupApplication) {
+					var params = {
+						docId: "",
+						flags: 0,
+						resumeMode: "always",  
+						tincan:
+						{
+							endPoint: "",
+							auth:
+							{
+								type: "",
+								key: "",
+								login: "",
+								password: "",
+								name: "",
+								email: ""
+							},
+							i18n:{
+				}
+						},
+						scorm2004:
+						{
+							edition: "2"
+						}
+					};
+				
+					var lms = iSpring.pdfviewer.LMS.create("2004", params);
+					lms.initialize(startupApplication);
+				}
+);
+			});
+		}
+		else
+		{
+			location.replace("data/html5-unsupported.html");
+		}
+	</script>
+</head>
+<body></body>
+</html>
